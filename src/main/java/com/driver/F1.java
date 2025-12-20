@@ -1,4 +1,4 @@
- com.driver;
+package com.driver;
 
 public class F1 implements Vehicle {
 
@@ -20,3 +20,4 @@ public class F1 implements Vehicle {
         return capacity;
     }
 }
+
