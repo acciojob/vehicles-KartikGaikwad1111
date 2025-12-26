@@ -1,28 +1,20 @@
-package com.driver;
+class Vehicle {
+    String name; // The name of the vehicle
+    int capacity; // The capacity of the vehicle
 
-public class Vehicle {
-
-    private String name;
-    private int currentSpeed;
-    private int currentDirection;
-
-    public Vehicle(String name) {
-
+    // Constructor
+    public Vehicle(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
     }
 
-    public void steer(int direction){
-        //direction is in degrees, add it to the current direction
-        System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
+    // Method to get the name of the vehicle
+    public String getVehicleName() {
+        return name;
     }
 
-    public void move(int speed, int direction){
-        //set the values of currentSpeed and currentDirection
-        System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
+    // Method to get the capacity of the vehicle
+    public int getVehicleCapacity() {
+        return capacity;
     }
-
-    public void stop(){
-
-        System.out.println("stop method called - The vehicle is stopped");
-    }
-
 }
