@@ -1,3 +1,4 @@
+// Step 1: Define the Vehicle class
 class Vehicle {
     String name; // The name of the vehicle
     int capacity; // The capacity of the vehicle
